@@ -40,7 +40,7 @@ const playerMaxHealth = 100;
 let playerHealth = playerMaxHealth;
 
 // Define the score
-let score = 6000;
+let score = 0;
 
 // Define the game intervals
 let enemyInterval;
