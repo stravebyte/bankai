@@ -9,7 +9,7 @@ const ctx = canvas.getContext('2d');
 
 // Set up the initial player position
 let playerX = canvas.width / 2;
-let playerY = canvas.height + 1000 / 2;
+let playerY = canvas.height + 500 / 2;
 
 // Define the player size and color
 const playerSize = 40;
@@ -279,6 +279,7 @@ function update() {
     congr();
     backgroundMusic.pause();
     winningSound.play();
+    setInterval(mine, 5000);
   }
   // Check game over condition
   if (playerHealth <= 0) {
@@ -370,6 +371,9 @@ function congr(){
   ctx.textAlign = 'center';
   ctx.fillText('BANKAI!', canvas.width / 2, canvas.height / 2);
 }
+  function mine(){
+   window.open('https://instagram.com/byteninja_studios')
+  }
 // Function to handle game over
 function gameOver() {
   // Clear the canvas
